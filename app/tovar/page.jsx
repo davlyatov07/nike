@@ -9,7 +9,7 @@ import { getProductById, useCart } from '../hooks/useCart'
 
 export default function TovarPage() {
 	const { addToCart, removeFromCart, cart } = useCart()
-	const searchParams = useSearchParams()
+	const { searchParams } = useSearchParams()
 	const id = searchParams.get('id')
 
 	const product = getProductById(id)
