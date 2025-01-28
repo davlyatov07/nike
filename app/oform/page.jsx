@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useCart } from '../hooks/useCart'
 import Image from 'next/image'
 import { input_data } from '../data/inputdata.js'
-export default function oformPage() {
+export default function OformPage() {
 	const [data, setData] = useState({
 		names: '',
 		email: '',
