@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import HeartButton from './HeartButton'
+import HeartButton from './heartbutton'
 import run from '../assets/images/run.jpg'
 import soccer from '../assets/images/soccer.jpg'
 import basket from '../assets/images/basket.jpg'

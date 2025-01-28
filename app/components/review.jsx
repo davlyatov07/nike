@@ -13,7 +13,7 @@ import jz from '../assets/images/22.png'
 import fz from '../assets/images/23.png'
 import zz from '../assets/images/24.png'
 import girl from '../assets/images/girl.png'
-import HeartButton from './HeartButton'
+import HeartButton from './heartbutton'
 import { useCart } from '../hooks/useCart'
 import { shoes } from '../data/shoes'
 

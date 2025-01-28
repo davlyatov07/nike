@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useCart } from '../hooks/useCart'
 import { shoes } from '../data/shoes'
-import HeartButton from './HeartButton'
+import HeartButton from './heartbutton'
 
 export default function AboutweSection() {
 	const { addToCart, removeFromCart, cart } = useCart()
