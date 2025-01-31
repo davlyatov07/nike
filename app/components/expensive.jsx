@@ -15,7 +15,7 @@ export default function ExpensiveSection() {
 			id='expensive'
 			className='container mx-auto overflow-hidden w-full'
 		>
-			<div className='flex justify-between items-center md:px-5 pt-10 px-12'>
+			<div className='flex justify-between items-center  pt-10 px-1'>
 				<p className='text-4xl font-medium'>В Наличии</p>
 				<Link
 					href={'/catalog'}
@@ -144,7 +144,7 @@ export default function ExpensiveSection() {
 				/>
 			</div>
 
-			<div className='flex justify-between gap-7  items-center md:px-5 pt-10 px-6'>
+			<div className='flex justify-between gap-7  items-center  pt-10 px-1'>
 				<p className='md:text-4xl font-medium text-nowrap'>Для Футбола</p>
 				<Link
 					href={'/catalog'}

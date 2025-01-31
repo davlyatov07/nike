@@ -11,7 +11,7 @@ export default function AboutweSection() {
 	return (
 		<section id='home'>
 			<div className='bg-white w-full md:h-20'></div>
-			<div className='flex justify-between items-center px-2 pt-10'>
+			<div className='flex justify-between items-center px-1  pt-10'>
 				<p className='md:text-4xl text-xl md:pl-0 pl-6 font-bold md:font-medium'>
 					Самое популярное сейчас
 				</p>

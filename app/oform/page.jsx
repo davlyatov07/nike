@@ -48,16 +48,16 @@ export default function OformPage() {
 		<>
 			<Head />
 			<section>
-				<div className='flex md:flex-row flex-col-reverse  md:justify-between md:px-0 pr-10 pt-10'>
+				<div className='flex md:flex-row flex-col-reverse  md:justify-between md:px-0 md:pr-10 pt-10'>
 					{formError && (
-						<div className=' flex justify-center -bottom-52 right-24 md:bottom-[155px] md:left-[290px] w-80	 text-white bg-red-700 absolute   border px-5 py-2 rounded-2xl '>
+						<div className=' flex justify-center -bottom-[43%]  md:bottom-[220px] md:left-[290px] w-80	 text-white bg-red-700 absolute   border px-5 py-2 rounded-2xl '>
 							<p> Заполните поле Пожалуйста!</p>
 						</div>
 					)}
 
 					{successMessage && (
 						<div className='  absolute backdrop-blur-2xl z-50 border md:px-40 md:py-20 py-20 h-80 px-10 bg-black/60  text-white    rounded-3xl text-center -bottom-64  md:top-1/4 md:right-44 gap-7'>
-							<p className='text-3xl pb-5 font-bold border px-10 rounded-3xl py-5 text-red-800'>
+							<p className='md:text-3xl pb-5 font-bold border px-10 rounded-3xl py-5 text-red-800'>
 								Ваш заказ принят!!!
 							</p>
 							<p className='font-thin text-xl'>
@@ -70,7 +70,7 @@ export default function OformPage() {
 						</div>
 					)}
 					<div className=''>
-						<form className='grid md:grid-cols-2 grid-rows-2 gap-5 max-w-screen-lg pt-10 px-20'>
+						<form className='grid md:grid-cols-2 grid-rows-2 gap-5 max-w-screen-lg pt-10 px-5 md:px-20'>
 							{input_data.map((element, index) => (
 								<input
 									key={index}
@@ -78,7 +78,7 @@ export default function OformPage() {
 									placeholder={element.placeholder}
 									className={`border rounded-3xl ${
 										index === input_data.length - 1
-											? 'py-20 px-1 md:w-[590px] text-center'
+											? 'py-20 px-1 md:w-[720px] text-center'
 											: 'py-3 px-10'
 									}`}
 									onChange={event =>
@@ -87,7 +87,7 @@ export default function OformPage() {
 								/>
 							))}
 						</form>
-						<div className='md:hidden flex  items-center px-16 gap-32 pt-20	 '>
+						<div className='md:hidden flex  items-end  px-5 gap-12 pt-10	 '>
 							<div className='text-2xl '>
 								<p>Итого</p>
 								<p className='text-nowrap font-semibold'>{totalPrice}₽</p>
@@ -105,8 +105,8 @@ export default function OformPage() {
 							</form>
 						</div>
 					</div>
-					<div className='pl-5 md:pr-7 pr-5'>
-						<div className=' top-8  md:-right-44 bg-white pr-0	 text-black  rounded-tl-3xl l md:w-[550px] px-5 py-5   -right-10 w-96 	'>
+					<div className='pl-5 md:pr-7 '>
+						<div className=' top-8  md:-right-44 bg-white pr-1	 text-black  rounded-tl-3xl l md:w-[550px]  py-5    w-auto 	'>
 							<div className='flex justify-between   border-b-2'>
 								<h1 className='text-xl font-semibold'>{cart.length} товара </h1>
 								<button onClick={clearCart}>Очистить</button>
@@ -117,7 +117,7 @@ export default function OformPage() {
 									cart.map(item => (
 										<div key={item.id} className=' pt-4 pb-4'>
 											<div className='flex justify-between gap-4 border  px-4 py-4 rounded-2xl  items-center	 bg-[#F5F5F5]'>
-												<div className=' border bg-white md:w-44 md:h-32 w-80 h-20 px-5 py-5 rounded-3xl'>
+												<div className=' border bg-white md:w-44 md:h-32 w-72 h-20 px-5 py-5 rounded-3xl'>
 													<Image
 														width={100}
 														height={100}

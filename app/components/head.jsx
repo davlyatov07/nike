@@ -71,7 +71,7 @@ export default function HeaderComponent() {
 
 				<button
 					onClick={open}
-					className='md:hidden md:pl-4 tb:pr-10 pr-10 md:pr-20'
+					className='md:hidden md:pl-4 tb:pr-10 mr-auto md:pr-20'
 				>
 					{icons.burgerb}
 				</button>

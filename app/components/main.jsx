@@ -11,7 +11,7 @@ export default function MainComponent() {
 		<>
 			<HomeSection />
 			<div className='w-full bg-white -translate-y-28 rounded-t-3xl'>
-				<div className='container mx-auto max-w-screen-xl'>
+				<div className='container md:px-20	  max-w-screen-2xl'>
 					<AboutweSection />
 					<CasesSection />
 					<ReviewsSection />

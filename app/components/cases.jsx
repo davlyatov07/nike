@@ -13,7 +13,7 @@ export default function CasesSection() {
 
 	return (
 		<section id='cases' className=''>
-			<div className='flex justify-between items-center px-5 pt-10'>
+			<div className='flex justify-between items-center px-1 pt-10'>
 				<p className='text-4xl font-medium'>Новинки</p>
 				<Link
 					href={'/catalog'}
@@ -115,7 +115,7 @@ export default function CasesSection() {
 					)
 				})}
 			</div>
-			<div className='flex md:flex-row flex-col text-center gap-14 pt-10 md:pl-1 pl-7'>
+			<div className='flex md:flex-row flex-col text-center gap-14 pt-10 md:pl-10 px-2'>
 				<div className=' '>
 					<p className='text-3xl font-bold pb-3 md:text-left'>Для бега</p>
 					<Image
@@ -143,8 +143,10 @@ export default function CasesSection() {
 					/>
 				</div>
 			</div>
-			<div className='flex justify-between items-center gap-2 pt-10 px-5'>
-				<p className='text-2xl  font-medium'>Для Вечерных Прогулок</p>
+			<div className='flex justify-between items-center gap-2 px-1 pt-10'>
+				<p className='md:text-3xl text-xl  font-semibold'>
+					Для Вечерных Прогулок
+				</p>
 				<Link
 					href={'/catalog'}
 					className='  border-neutral-600 border rounded-3xl px-3 py-2 text-sm transform transition-all duration-500 hover:scale-95 hover:bg-gray-100 hover:shadow-xl'

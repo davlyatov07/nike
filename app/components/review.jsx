@@ -31,7 +31,7 @@ export default function ReviewSection() {
 				<button className='swiper-button-next'>{icons.r}</button>
 			</div>
 
-			<div className='pt-16 pl-7'>
+			<div className='pt-16 px-5'>
 				<Swiper
 					spaceBetween={20}
 					slidesPerView={1}
@@ -60,7 +60,7 @@ export default function ReviewSection() {
 				</Swiper>
 			</div>
 
-			<div className='flex justify-between  md:px-5 pt-10 px-5 items-center'>
+			<div className='flex justify-between  md:px-5 pt-10  items-center'>
 				<p className='md:text-4xl text-xl font-bold md:font-medium'>
 					Подберём пару по бюджету
 				</p>
