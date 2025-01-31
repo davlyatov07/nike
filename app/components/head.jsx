@@ -74,7 +74,7 @@ export default function HeaderComponent() {
 				</button>
 
 				{isOpen && (
-					<div className='fixed top-0 left-0 w-full h-full bg-white z-50'>
+					<div className='fixed top-0 left-0 w-full h-screen bg-white z-50'>
 						<div className='flex	items-center pt-2'>
 							<div className='pt-3 ml-auto pr-32'>{icons.vareb}</div>
 							<button onClick={close} className='absolute top-6 left-7'>
