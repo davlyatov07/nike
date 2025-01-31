@@ -47,7 +47,7 @@ export default function ExpensiveSection() {
 							className='border md:w-60 h-fit  rounded-xl flex flex-col gap-4 pb-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'
 						>
 							<div className='pt-3 px-3 flex justify-center gap-1 items-center'>
-								<div className='md:pr-24 pr-16'>
+								<div className='md:pr-24 mr-auto'>
 									<p className='bg-black text-white w-12 py-1 px-2 text-xs rounded-lg'>
 										{product.status}
 									</p>
@@ -145,7 +145,7 @@ export default function ExpensiveSection() {
 			</div>
 
 			<div className='flex justify-between gap-7  items-center md:px-5 pt-10 px-6'>
-				<p className='text-4xl font-medium text-nowrap'>Для Футбола</p>
+				<p className='md:text-4xl font-medium text-nowrap'>Для Футбола</p>
 				<Link
 					href={'/catalog'}
 					className='  border-neutral-600 border rounded-3xl px-3 py-2 text-sm transform transition-all duration-500 hover:scale-95 hover:bg-gray-100 hover:shadow-xl'
@@ -175,7 +175,7 @@ export default function ExpensiveSection() {
 							className='border md:w-60 h-fit  rounded-xl flex flex-col gap-4 pb-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'
 						>
 							<div className='pt-3 px-3 flex justify-center gap-1 items-center'>
-								<div className='md:pr-24 pr-16'>
+								<div className='md:pr-24 mr-auto'>
 									<p className='bg-black text-white w-12 py-1 px-2 text-xs rounded-lg'>
 										{product.status}
 									</p>
@@ -254,13 +254,13 @@ export default function ExpensiveSection() {
 						эксклюзивные акции, обновления и новости
 					</p>
 				</div>
-				<div className='absolute flex md:left-44 pt-60 gap-5'>
+				<div className='absolute flex md:left-44 pt-60 md:gap-5'>
 					<input
 						type='email'
 						className='rounded-full px-2 py-4'
 						placeholder='Ваш E-mail'
 					/>
-					<button className='bg-white px-10 rounded-full py-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'>
+					<button className='bg-white ms:px-10 rounded-full py-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'>
 						Подписаться
 					</button>
 				</div>

@@ -60,8 +60,8 @@ export default function HeaderComponent() {
 
 	return (
 		<>
-			<section className='relative top-0 z-10 w-full flex justify-start md:pl-16 pl-3 text-[#e0e1e3] items-center pt-2'>
-				<div className='md:flex gap-8 hidden'>
+			<section className='relative top-0 z-10 md:w-full  flex justify-start md:pl-16 pl-3 text-[#e0e1e3] items-center pt-2'>
+				<div className='md:flex md:text-lg gap-8 hidden'>
 					{links.map((link, index) => (
 						<Link key={index} href={link.url}>
 							{link.text}
@@ -69,7 +69,7 @@ export default function HeaderComponent() {
 					))}
 				</div>
 
-				<button onClick={open} className='md:hidden pl-4 pr-20'>
+				<button onClick={open} className='md:hidden pl-2 mr-auto md:mr-20'>
 					{icons.burger}
 				</button>
 
@@ -96,10 +96,10 @@ export default function HeaderComponent() {
 					</div>
 				)}
 
-				<div className='md:pl-40 pl-2 md:pr-1 pr-16'>{icons.oo}</div>
-				<div className='flex items-center gap-4 md:pl-96'>
+				<div className='md:ml-auto  md:pr-1 '>{icons.oo}</div>
+				<div className='flex items-center gap-3 md:pl-96 md:pr-10 pr-5'>
 					{icons.heart}
-					<div className='relative pt-1'>
+					<div className='relative pt-1 pl-5 md:pl-0 '>
 						<button onClick={openPopover}>{icons.kor}</button>
 						<div className='absolute -top-2 -right-2 bg-red-600 text-white py-px px-1 rounded-full text-xs'>
 							{cart.length}

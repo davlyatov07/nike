@@ -92,7 +92,7 @@ export default function ReviewSection() {
 							className='border md:w-60 h-fit  rounded-xl flex flex-col gap-4 pb-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'
 						>
 							<div className='pt-3 px-3 flex justify-center gap-1 items-center'>
-								<div className='md:pr-24 pr-16'>
+								<div className='md:pr-24 mr-auto'>
 									<p className='bg-black text-white w-12 py-1 px-2 text-xs rounded-lg'>
 										{product.status}
 									</p>

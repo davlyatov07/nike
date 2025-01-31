@@ -44,7 +44,7 @@ export default function CasesSection() {
 							className='border md:w-60 h-fit  rounded-xl flex flex-col gap-4 pb-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'
 						>
 							<div className='pt-3 px-3 flex justify-center gap-1 items-center'>
-								<div className='md:pr-24 pr-16'>
+								<div className='md:pr-24 mr-auto'>
 									<p className='bg-black text-white w-12 py-1 px-2 text-xs rounded-lg'>
 										{product.status}
 									</p>
@@ -144,9 +144,7 @@ export default function CasesSection() {
 				</div>
 			</div>
 			<div className='flex justify-between items-center gap-2 pt-10 px-5'>
-				<p className='text-2xl text-nowrap font-medium'>
-					Для Вечерных Прогулок
-				</p>
+				<p className='text-2xl  font-medium'>Для Вечерных Прогулок</p>
 				<Link
 					href={'/catalog'}
 					className='  border-neutral-600 border rounded-3xl px-3 py-2 text-sm transform transition-all duration-500 hover:scale-95 hover:bg-gray-100 hover:shadow-xl'
@@ -177,7 +175,7 @@ export default function CasesSection() {
 							className='border md:w-60 h-fit  rounded-xl flex flex-col gap-4 pb-4 transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'
 						>
 							<div className='pt-3 px-3 flex justify-center gap-1 items-center'>
-								<div className='md:pr-24 pr-16'>
+								<div className='md:pr-24 mr-auto'>
 									<p className='bg-black text-white w-12 py-1 px-2 text-xs rounded-lg'>
 										{product.status}
 									</p>

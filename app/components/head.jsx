@@ -60,7 +60,7 @@ export default function HeaderComponent() {
 
 	return (
 		<>
-			<section className='relative top-0 z-10 w-full flex justify-start md:pl-16 pl-3 text-black items-center pt-2'>
+			<section className='relative top-0 z-10 w-full flex justify-start md:pl-16 md:text-lg pl-3 text-black items-center pt-2'>
 				<div className='md:flex gap-8 hidden'>
 					{links.map((link, index) => (
 						<Link key={index} href={link.url}>
@@ -69,19 +69,22 @@ export default function HeaderComponent() {
 					))}
 				</div>
 
-				<button onClick={open} className='md:hidden pl-4 pr-20'>
+				<button
+					onClick={open}
+					className='md:hidden md:pl-4 tb:pr-10 pr-10 md:pr-20'
+				>
 					{icons.burgerb}
 				</button>
 
 				{isOpen && (
 					<div className='fixed top-0 left-0 w-full h-full bg-white z-[1000]'>
 						<div className='flex	items-center pt-2'>
-							<div className='pt-3 pl-40'>{icons.vareb}</div>
-							<button onClick={close} className='absolute top-6 left-10'>
+							<div className='pt-3 pl-28 md:pl-40'>{icons.vareb}</div>
+							<button onClick={close} className='absolute top-6 left-6'>
 								{icons.x}
 							</button>
 						</div>
-						<nav className='flex flex-col items-start gap-3 pl-10 text-3xl mt-16'>
+						<nav className='flex flex-col items-start gap-3 pl-6 text-3xl mt-16'>
 							{links.map((link, index) => (
 								<Link
 									key={index}
@@ -96,8 +99,8 @@ export default function HeaderComponent() {
 					</div>
 				)}
 
-				<div className='md:pl-40 pl-2 md:pr-1 pr-16'>{icons.oob}</div>
-				<div className='flex items-center gap-4 md:pl-96'>
+				<div className='md:pl-40 pl-2 md:pr-20 pr-9'>{icons.oob}</div>
+				<div className='flex items-center md:gap-3 gap-2 md:pl-96'>
 					{icons.heartb}
 					<div className='relative pt-1'>
 						<button onClick={openPopover}>{icons.korb}</button>
@@ -105,7 +108,7 @@ export default function HeaderComponent() {
 							{cart.length}
 						</div>
 						{openPop && (
-							<div className='absolute top-8 border-b-2 md:-right-4 bg-white text-black rounded-tl-3xl rounded-b-3xl md:w-[500px] px-5 py-5 h-fit z-[1000] -right-10 w-96'>
+							<div className='absolute top-8 border-b-2 md:-right-4 bg-white text-black rounded-tl-3xl rounded-b-3xl md:w-[500px] px-5 py-5 h-fit z-[1000] -right-12 w-80'>
 								<div className='flex justify-between border-b pt-3'>
 									<h1 className='text-black text-2xl font-semibold pb-3'>
 										Корзина
@@ -118,20 +121,20 @@ export default function HeaderComponent() {
 									{cart.length > 0 ? (
 										cart.map(item => (
 											<div key={item.id} className='pt-4 pb-4'>
-												<div className='flex  gap-10 items-center border px-4 py-4 rounded-2xl bg-[#F5F5F5]'>
-													<div className='border bg-white md:w-44 md:h-32 w-80 px-5 py-5 rounded-3xl'>
+												<div className='flex gap-5  md:gap-10 items-center border px-4 py-4 rounded-2xl bg-[#F5F5F5]'>
+													<div className='border bg-white md:w-44 md:h-32 w-80 md:py-5 md:px-5 py-2 rounded-3xl'>
 														<Image
-															width={100}
-															height={100}
 															alt={item.name}
 															src={item.image}
-															className='md:w-32 md:h-20'
+															className='md:w-32  md:h-20'
 														/>
 													</div>
 													<div className='flex flex-col gap-2 pt-5 font-bold text-nowrap'>
-														<p className='text-xl font-semibold'>{item.name}</p>
+														<p className='md:text-xl font-semibold'>
+															{item.name}
+														</p>
 														<div className='flex gap-10'>
-															<p className='text-xl'>{item.price}₽</p>
+															<p className='md:text-xl'>{item.price}₽</p>
 															<button
 																className='transform transition-all duration-500 hover:scale-95 rounded-full hover:bg-red-700 px-1 py-1 hover:shadow-xl'
 																onClick={() => removeFromCart(item)}
@@ -149,7 +152,7 @@ export default function HeaderComponent() {
 										</p>
 									)}
 								</div>
-								<div className='flex items-center md:gap-48 gap-32 pt-4 border-t'>
+								<div className='flex items-center md:gap-48 gap-20 pt-4 border-t'>
 									<div className='text-2xl'>
 										<p>Итого:</p>
 										<p className='text-nowrap font-semibold'>{totalPrice}₽</p>
@@ -188,18 +191,18 @@ export default function HeaderComponent() {
 						</svg>
 					</button>
 					{isSearchOpen && (
-						<div className='absolute md:right-16 right-16 flex items-center transition-all duration-300 ease-in-out'>
+						<div className='absolute md:right-[90px] right-[47px] flex items-center transition-all duration-300 ease-in-out'>
 							<input
 								type='search'
 								value={searchQuery}
 								onChange={handleSearchChange}
 								placeholder='Поиск...'
-								className='border border-gray-300 rounded-md py-4 px-4 md:w-[450px] w-64 focus:outline-none focus:ring-2 focus:ring-black text-black'
+								className='border border-gray-300 rounded-md py-3 px-4 md:w-96 w-56 focus:outline-none focus:ring-2 focus:ring-black text-black'
 							/>
 						</div>
 					)}
 					{isSearchOpen && searchQuery && (
-						<div className='absolute md:right-16 right-16 mt-28 -top-14 h-80 z-[1000] w-64 md:w-[450px] bg-white border border-gray-300 rounded-md shadow-lg border-t-0'>
+						<div className='absolute md:right-[90px] right-12 mt-28 -top-14 h-80 z-[1000] w-56 md:w-96 bg-white border border-gray-300 rounded-md shadow-lg border-t-0'>
 							<ul className='overflow-y-auto h-full'>
 								{searchResults.length > 0 ? (
 									searchResults.map(item => (

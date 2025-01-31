@@ -34,7 +34,7 @@ export default function TovarPage() {
 			<div className='bg-white text-black'></div>
 			<section className='pt-10'>
 				<div className='flex md:flex-row flex-col justify-around px-10 '>
-					<div className='md:w-1/3 w-full  border rounded-3xl'>
+					<div className='md:w-1/3 w-auto  border rounded-3xl'>
 						<Image
 							src={product.image}
 							alt={product.name}
@@ -43,14 +43,14 @@ export default function TovarPage() {
 						/>
 					</div>
 					<div className='flex flex-col gap-2 pt-28'>
-						<h1 className='text-5xl font-medium'>{product.name}</h1>
-						<p className='text-3xl font-semibold'>
+						<h1 className='md:text-5xl text-2xl font-medium'>{product.name}</h1>
+						<p className='md:text-3xl text-xl font-semibold'>
 							{product.price} {product.currency}
 						</p>
 						<div className='flex gap-3 pt-5'>
 							<Link
 								href={'/oform'}
-								className='bg-gradient-to-r border-black from-black border rounded-xl px-10 text-white py-5 text-sm transform transition-all duration-500 hover:scale-95 hover:bg-slate-900 hover:shadow-xl'
+								className='bg-gradient-to-r border-black from-black border rounded-xl md:px-10 px-5 text-white py-5 text-sm transform transition-all duration-500 hover:scale-95 hover:bg-slate-900 hover:shadow-xl'
 							>
 								Быстрая покупка
 							</Link>
