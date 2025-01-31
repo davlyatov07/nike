@@ -32,7 +32,7 @@ export default function TovarPage() {
 		<>
 			<Head />
 			<div className='bg-white text-black'></div>
-			<section className='pt-10'>
+			<section className='pt-20'>
 				<div className='flex md:flex-row flex-col justify-around px-10 '>
 					<div className='md:w-1/3 w-auto  border rounded-3xl'>
 						<Image
