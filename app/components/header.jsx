@@ -60,7 +60,7 @@ export default function HeaderComponent() {
 
 	return (
 		<>
-			<section className='relative top-0 z-10 md:w-full  flex justify-start md:pl-16 pl-3 text-[#e0e1e3] items-center pt-2'>
+			<section className='fixed bg-black/40 backdrop-blur-md top-0 z-10 w-full  flex justify-start md:pl-16 pl-3 text-[#e0e1e3] items-center pt-2'>
 				<div className='md:flex md:text-lg gap-8 hidden'>
 					{links.map((link, index) => (
 						<Link key={index} href={link.url}>
@@ -74,14 +74,14 @@ export default function HeaderComponent() {
 				</button>
 
 				{isOpen && (
-					<div className='fixed top-0 left-0 w-full h-full bg-white z-[1000]'>
+					<div className='fixed top-0 left-0 w-full h-full bg-white z-50'>
 						<div className='flex	items-center pt-2'>
-							<div className='pt-3 ml-auto pr-28'>{icons.vareb}</div>
-							<button onClick={close} className='absolute top-6 left-10'>
+							<div className='pt-3 ml-auto pr-32'>{icons.vareb}</div>
+							<button onClick={close} className='absolute top-6 left-7'>
 								{icons.x}
 							</button>
 						</div>
-						<nav className='flex flex-col items-start gap-3 pl-10 text-3xl mt-16'>
+						<nav className='flex flex-col items-start gap-3 pl-7 text-3xl mt-16'>
 							{links.map((link, index) => (
 								<Link
 									key={index}

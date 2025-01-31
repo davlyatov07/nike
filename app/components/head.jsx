@@ -60,8 +60,8 @@ export default function HeaderComponent() {
 
 	return (
 		<>
-			<section className='relative top-0 z-10 w-full flex justify-start md:pl-16 md:text-lg pl-3 text-black items-center pt-2'>
-				<div className='md:flex gap-8 hidden'>
+			<section className='fixed bg-black/10 backdrop-blur-md top-0 z-10 w-full  flex justify-start md:pl-16 pl-3 text-black items-center pt-2'>
+				<div className='md:flex md:text-lg gap-8 hidden'>
 					{links.map((link, index) => (
 						<Link key={index} href={link.url}>
 							{link.text}
@@ -69,22 +69,19 @@ export default function HeaderComponent() {
 					))}
 				</div>
 
-				<button
-					onClick={open}
-					className='md:hidden md:pl-4 tb:pr-10 mr-auto md:pr-20'
-				>
+				<button onClick={open} className='md:hidden pl-2 mr-auto md:mr-20'>
 					{icons.burgerb}
 				</button>
 
 				{isOpen && (
-					<div className='fixed top-0 left-0 w-full h-full bg-white z-[1000]'>
+					<div className='fixed top-0 left-0 w-full h-full bg-white z-50'>
 						<div className='flex	items-center pt-2'>
-							<div className='pt-3 pl-28 md:pl-40'>{icons.vareb}</div>
-							<button onClick={close} className='absolute top-6 left-6'>
+							<div className='pt-3 ml-auto pr-32'>{icons.vareb}</div>
+							<button onClick={close} className='absolute top-6 left-7'>
 								{icons.x}
 							</button>
 						</div>
-						<nav className='flex flex-col items-start gap-3 pl-6 text-3xl mt-16'>
+						<nav className='flex flex-col items-start gap-3 pl-7 text-3xl mt-16'>
 							{links.map((link, index) => (
 								<Link
 									key={index}
@@ -99,10 +96,10 @@ export default function HeaderComponent() {
 					</div>
 				)}
 
-				<div className='md:pl-40 pl-2 md:pr-20 pr-9'>{icons.oob}</div>
-				<div className='flex items-center md:gap-3 gap-2 md:pl-96'>
+				<div className='md:ml-auto  md:pr-1 '>{icons.oob}</div>
+				<div className='flex items-center md:gap-3 gap-1 md:pl-96 md:pr-10 		pr-3	'>
 					{icons.heartb}
-					<div className='relative pt-1'>
+					<div className='relative pt-1 md:ml-0 ml-10 sm:ml-20 md:pl-0 '>
 						<button onClick={openPopover}>{icons.korb}</button>
 						<div className='absolute -top-2 -right-2 bg-red-600 text-white py-px px-1 rounded-full text-xs'>
 							{cart.length}
@@ -191,18 +188,18 @@ export default function HeaderComponent() {
 						</svg>
 					</button>
 					{isSearchOpen && (
-						<div className='absolute md:right-[90px] right-[47px] flex items-center transition-all duration-300 ease-in-out'>
+						<div className='absolute md:right-[87px] right-14 flex items-center transition-all duration-300 ease-in-out'>
 							<input
 								type='search'
 								value={searchQuery}
 								onChange={handleSearchChange}
 								placeholder='Поиск...'
-								className='border border-gray-300 rounded-md py-3 px-4 md:w-96 w-56 focus:outline-none focus:ring-2 focus:ring-black text-black'
+								className='border border-gray-300 rounded-md py-4 px-4 md:w-[450px] w-64 focus:outline-none focus:ring-2 focus:ring-black text-black'
 							/>
 						</div>
 					)}
 					{isSearchOpen && searchQuery && (
-						<div className='absolute md:right-[90px] right-12 mt-28 -top-14 h-80 z-[1000] w-56 md:w-96 bg-white border border-gray-300 rounded-md shadow-lg border-t-0'>
+						<div className='absolute md:right-[87px] right-14 mt-28 -top-14 h-80 z-[1000] w-64 md:w-[450px] bg-white border border-gray-300 rounded-md shadow-lg border-t-0'>
 							<ul className='overflow-y-auto h-full'>
 								{searchResults.length > 0 ? (
 									searchResults.map(item => (

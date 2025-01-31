@@ -49,18 +49,31 @@ export default function ReviewSection() {
 					}}
 				>
 					<SwiperSlide>
+						<div className='absolute md:right-12 right-6 ri	top-4'>
+							{icons.r}
+						</div>
+						<div className='absolute md:right-12 md:flex hidden	top-4'>
+							{icons.r}
+						</div>
 						<Image src={jz} alt='image' className='rounded-lg' />
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='absolute md:right-12  md:flex hidden right-6 ri	top-4'>
+							{icons.r}
+						</div>
+						<div className='absolute md:right-12 right-6 	top-4'>{icons.r}</div>
 						<Image src={fz} alt='image' className='rounded-lg' />
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='absolute md:right-12 right-6 ri	top-4'>
+							{icons.r}
+						</div>
 						<Image src={zz} alt='image' className='rounded-lg' />
 					</SwiperSlide>
 				</Swiper>
 			</div>
 
-			<div className='flex justify-between  md:px-5 pt-10  items-center'>
+			<div className='flex justify-between  md:px-5 pt-10 px-1 items-center'>
 				<p className='md:text-4xl text-xl font-bold md:font-medium'>
 					Подберём пару по бюджету
 				</p>
@@ -162,14 +175,17 @@ export default function ReviewSection() {
 					)
 				})}
 			</div>
-			<div className='flex md:flex-row flex-col md:justify-center pt-28 text-white transform transition-all duration-500 hover:scale-95  hover:bg-gray-100 hover:shadow-xl'>
-				<div className='flex md:gap-80 gap-40 flex-col  absolute justify-start pt-10 left-16'>
-					<h1 className='text-xl'>спецпредложения</h1>
+			<div className='flex md:flex-row flex-col md:justify-center pt-28 text-white transform transition-all duration-500 hover:scale-95    px-5'>
+				<div className='flex md:gap-80 gap-40 flex-col  absolute justify-start pt-10 md:left-16 left-10'>
+					<div className=' flex items-center  gap-10'>
+						<h1 className='text-xl'>спецпредложения</h1>
+						<p className=' md:absolute md:-right-[600px]'>{icons.r}</p>
+					</div>
 					<h1 className='text-5xl font-semibold'>Гарантия лучшей цены</h1>
 				</div>
 				<Image
 					src={girl}
-					className='w-[1255px] md:h-full h-96 object-cover md:rounded-none rounded-3xl'
+					className='w-[1485px] md:h-full h-96 object-cover md:rounded-none rounded-3xl'
 					alt='image'
 				/>
 			</div>

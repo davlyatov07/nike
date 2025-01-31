@@ -23,7 +23,7 @@ export default function HomeSection() {
 					<div className='absolute md:top-[70%] top-[69%] left-[5%]  '>
 						<Link
 							href={'./catalog'}
-							className='bg-white px-10 border py-5 absolute text-nowrap z-10 text-black rounded-2xl transform transition-all duration-500 hover:scale-95 hover:bg-gray-500 hover:shadow-xl'
+							className='bg-white px-10 border py-5 absolute text-nowrap  text-black rounded-2xl transform transition-all duration-500 hover:scale-95 hover:bg-gray-500 hover:shadow-xl'
 						>
 							Перейти в каталог
 						</Link>

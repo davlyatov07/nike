@@ -9,7 +9,11 @@ const HeartButton = () => {
 
 	return (
 		<button
-			onClick={toggleLike}
+			onClick={event => {
+				event.preventDefault()
+				event.stopPropagation()
+				toggleLike()
+			}}
 			style={{
 				background: 'none',
 				border: 'none',

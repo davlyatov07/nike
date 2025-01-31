@@ -139,7 +139,7 @@ export default function ExpensiveSection() {
 				</div>
 				<Image
 					src={sale}
-					className='md:w-[1285px] md:h-full h-80 object-cover md:object-contain rounded-3xl'
+					className='md:w-[1485px] md:h-full h-80 object-cover md:object-contain rounded-3xl'
 					alt='image'
 				/>
 			</div>
@@ -267,7 +267,7 @@ export default function ExpensiveSection() {
 
 				<Image
 					src={foot}
-					className='md:w-[1285px] md:h-full h-80 object-cover rounded-3xl px-2'
+					className='md:w-[1485px] md:h-full h-80 object-cover rounded-3xl px-2'
 					alt='image'
 				/>
 			</div>

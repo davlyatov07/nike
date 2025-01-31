@@ -265,7 +265,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
@@ -354,7 +358,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
@@ -443,7 +451,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
@@ -532,7 +544,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
@@ -621,7 +637,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
@@ -710,7 +730,11 @@ export default function CatalogPages() {
 										</div>
 										<HeartButton />
 										<button
-											onClick={handleButtonClick}
+											onClick={event => {
+												event.preventDefault()
+												event.stopPropagation()
+												handleButtonClick()
+											}}
 											style={{
 												backgroundColor: isInCart ? 'black' : 'transparent',
 												color: isInCart ? 'white' : 'black',
