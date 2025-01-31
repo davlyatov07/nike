@@ -29,7 +29,7 @@ export default function HomeSection() {
 						</Link>
 					</div>
 				</div>
-				<div className='md:flex absolute md:w-full w-56  md:top-64 top-[51%] left-[3%]'>
+				<div className='md:flex absolute md:w-full w-56  md:top-64 top-[45%] left-[3%]'>
 					<Image src={logo} className='' alt='image' />
 				</div>
 			</section>
